@@ -1,2 +1,51 @@
-# smartdash-portfolio
-Smartdash is a premium digital design studio creating modern websites, ecommerce experiences, WordPress solutions, brand identities and SEO-ready digital products for ambitious businesses and professionals.
+# SMARTDESH® — وب‌سایت استودیوی طراحی وب
+
+وب‌سایت یک‌صفحه‌ای و کاملاً فارسی برای استودیوی طراحی وب **SMARTDESH** (رسول بابایی — مهندس IT). با React + Vite + Tailwind ساخته شده و شامل **پنل مدیریت داخلی**، **فروشگاه محصولات دیجیتال** و **دستیار فروش هوشمند** است.
+
+## ✨ امکانات
+
+- **طراحی راست‌به‌چین فارسی** با هویت بصری اختصاصی (بنفش/فیروزه‌ای)
+- **پنل مدیریت داخلی** در `/#admin` — ویرایش متن‌ها، قیمت‌ها، محصولات و رنگ‌ها بدون کدنویسی
+- **فروشگاه محصولات دیجیتال** با دسته‌بندی، تخفیف و تایمر شمارش‌معکوس
+- **دستیار فروش هوشمند** (چت فارسی) که نیاز مشتری را تشخیص داده و به واتساپ/تماس/فرم هدایت می‌کند
+- **قرارداد سه‌قسطی** و سؤالات متداول
+- **اتصال به درگاه زرین‌پال** (اختیاری) با توابع serverless
+- **کاملاً واکنش‌گرا** (موبایل تا دسکتاپ)
+
+## 🚀 شروع سریع
+
+```bash
+npm install
+npm run dev      # اجرای محلی روی http://localhost:5173
+npm run build    # ساخت خروجی در dist/
+```
+
+## ⚙️ ورود به پنل مدیریت
+
+آدرس سایت را با `#admin` باز کن، مثلاً `https://your-domain.ir/#admin`.
+رمز پیش‌فرض روی دستگاه: `1234` — بعد از ورود آن را در بخش «انتشار و پشتیبان» عوض کن.
+
+## 💳 پرداخت آنلاین (زرین‌پال)
+
+برای فعال‌شدن درگاه، کل پروژه را روی **Vercel** استقرار بده (نه فقط `dist/index.html`) و متغیرهای محیطی را در تنظیمات پروژه Vercel اضافه کن. جزئیات کامل در [`PAYMENT-SETUP.md`](./PAYMENT-SETUP.md) آمده است.
+
+## 📁 ساختار پروژه
+
+```
+src/
+  App.tsx                 # کامپوننت اصلی صفحه
+  content.ts              # تمام محتوای قابل‌ویرایش (متن/قیمت/محصولات)
+  salesEngine.ts          # موتور دستیار فروش هوشمند
+  components/
+    Admin.tsx             # پنل مدیریت
+    Shop.tsx              # فروشگاه
+    SalesAssistant.tsx    # چت دستیار فروش
+    ProjectModal.tsx      # فرم سفارش
+api/zarinpal/             # توابع serverless درگاه پرداخت
+server/zarinpal.js         # کمکی‌های درگاه
+vercel.json               # تنظیمات استقرار Vercel
+```
+
+## 📄 لایسنس
+
+MIT

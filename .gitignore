@@ -1,0 +1,25 @@
+# وابستگی‌ها
+node_modules/
+
+# خروجی بیلد
+dist/
+build/
+
+# متغیرهای محیطی (هرگز به گیت نروند)
+.env
+.env.local
+.env.*.local
+
+# لاگ‌ها
+*.log
+npm-debug.log*
+
+# ویرایشگر و سیستم‌عامل
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# فایلهای پشتیبانی موقت
+*.zip
+*.tmp
